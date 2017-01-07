@@ -41,6 +41,7 @@ RUN conda update -y conda && \
 	pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip && \
 	pip install pyscenedetect --upgrade --no-dependencies
 
+# Configuration file for theano
 RUN echo -e "[global]\nfloatX = float32\ndevice = cpu\nopenmp = True" >> ~/.theanorc
 
 
